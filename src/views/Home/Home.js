@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./Home.css"
 import I18n from '../../utility/i18n';
 
 function Home() {
 
-    // const usersCount = 15;
+    const usersCount = 30;
 
   return (
     <div>
@@ -13,6 +13,8 @@ function Home() {
         <p>{I18n("normalMessage")}</p>
 
         <h3>{I18n("greetingMessage")}</h3>
+
+        <h5>{I18n("endMessage")}</h5>
 
         <select 
         defaultValue={localStorage.getItem("lang")}
@@ -25,9 +27,9 @@ function Home() {
           <option value="en">English</option>
         </select>
 
-        {/* <p>
-            {usersCount} users are learning in this session.
-        </p> */}
+        <p>
+            {I18n("userStatMessage", "<studentCount>", usersCount)}
+        </p>
     </div>
   )
 }
