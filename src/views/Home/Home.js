@@ -14,6 +14,12 @@ function Home() {
 
         <h3>{I18n("greetingMessage")}</h3>
 
+        <select>
+          <option value="mr">Marathi</option>
+          <option value="hi">Hindi</option>
+          <option value="en">English</option>
+        </select>
+
         {/* <p>
             {usersCount} users are learning in this session.
         </p> */}
