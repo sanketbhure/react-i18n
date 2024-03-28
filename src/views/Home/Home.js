@@ -1,23 +1,22 @@
 import React from 'react'
 import "./Home.css"
+import I18n from '../../utility/i18n';
 
 function Home() {
 
-    const usersCount = 15;
+    // const usersCount = 15;
 
   return (
     <div>
-        <h1>Welcome!</h1>
+        <h1>{I18n("welcomeMessage")}</h1>
 
-        <p>
-            We hope you enjoy learning React.
-        </p>
+        <p>{I18n("normalMessage")}</p>
 
-        <h3>Have a great day!</h3>
+        <h3>{I18n("greetingMessage")}</h3>
 
-        <p>
+        {/* <p>
             {usersCount} users are learning in this session.
-        </p>
+        </p> */}
     </div>
   )
 }
